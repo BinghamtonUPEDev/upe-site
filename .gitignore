@@ -59,3 +59,7 @@ typings/
 
 # Semantic
 semantic/
+
+# Ignore certain asset folders
+assets/pdf
+assets/img/photos

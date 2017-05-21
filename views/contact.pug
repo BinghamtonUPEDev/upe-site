@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .ui.one.column.padded.grid
+    .ui.row.computer.only(style='padding: 10px;')
+    .ui.row
+      img.ui.centered.image.logo(src='assets/img/logo.png')
+    .ui.row.centered
+      h1.ui.inverted.header
+        .content
+          | Contact Us
+    .ui.row.centered
+      .one.wide.column
+      .fourteen.wide.column
+        .ui.info.message
+          .header Send an Email
+          p Our office is located in EB-N1. You can email us at:&nbsp;
+            span
+              strong upeebd@binghamton.edu
+      .one.wide.column
+    .ui.row
+      .one.wide.column
+      .fourteen.wide.column
+        .ui.three.stackable.doubling.cards
+          each member in locals.eboard
+            .card
+              .content
+                .header #{member.name}
+                .description #{member.position}
+      .one.wide.column

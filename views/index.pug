@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .ui.one.column.padded.grid
+    .ui.row.computer.only(style='padding: 10px;')
+    .ui.row
+      img.ui.centered.image.logo(src='assets/img/logo.png')
+    .ui.row.centered
+      h1.ui.inverted.header
+        .content
+          | Binghamton University Upsilon Pi Epsilon
+          .sub.header We are the local chapter of the Upsilon Pi Epsilon for Binghamton University.
+    .ui.row.centered
+      a.ui.huge.blue.button(href='/tutoring') View Tutoring Hours
+    .ui.row.centered
+      .ui.three.medium.images
+        a(href='assets/img/photos/spr-17-front.jpg', target='_blank')
+          img.ui.bordered.rounded.image(src='assets/img/photos/spr-17-front.jpg')
+        a(href='assets/img/photos/spr-17-board.jpg', target='_blank')
+          img.ui.bordered.rounded.image(src='assets/img/photos/spr-17-board.jpg')
+        a(href='assets/img/photos/spr-17-audience.jpg', target='_blank')
+          img.ui.bordered.rounded.image(src='assets/img/photos/spr-17-audience.jpg')

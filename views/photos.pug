@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .ui.one.column.padded.grid
+    .ui.row.computer.only(style='padding: 10px;')
+    .ui.row
+      img.ui.centered.image.logo(src='assets/img/logo.png')
+    .ui.row.centered
+      h1.ui.inverted.header
+        .content
+          | Photo Gallery
+    .ui.row
+      .two.wide.column
+      .twelve.wide.column
+        h3.ui.horizontal.divider.inverted.header
+          i.folder.outline.icon
+          | Spring 2017 Induction
+        .ui.three.medium.images
+          each img in spring17
+            a(href='assets/img/photos/spring17/' + img, target='_blank')
+              img.ui.bordered.rounded.image(src='assets/img/photos/spring17/' + img)
+        h3.ui.horizontal.divider.inverted.header
+          i.folder.outline.icon
+          | Fall 2016 Induction
+        .ui.three.medium.images
+          each img in fall16
+            a(href='assets/img/photos/spring17/' + img, target='_blank')
+              img.ui.bordered.rounded.image(src='assets/img/photos/fall16/' + img)
+      .two.wide.column

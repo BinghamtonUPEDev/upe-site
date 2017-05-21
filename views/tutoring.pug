@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .ui.one.column.padded.grid
+    .ui.row.computer.only(style='padding: 10px;')
+    .ui.row
+      img.ui.centered.image.logo(src='assets/img/logo.png')
+    .ui.row.centered
+      h1.ui.inverted.header
+        .content
+          | Tutoring Hours
+    .ui.row
+      .one.wide.column
+      .fourteen.wide.column
+        .ui.info.message
+          .header Notice
+          p Unless otherwise noted, all tutoring sessions are held in EB-N1. Tutoring starts after the add/drop deadline and goes through the last day of classes.
+      .one.wide.column
+    .ui.row
+      .one.wide.column
+      .fourteen.wide.column
+        .ui.embed.tutoring.schedule(data-url='https://calendar.google.com/calendar/embed?src=binghamton.edu_fb95nadtpmhnek0ir2gon3hgos%40group.calendar.google.com&ctz=America/New_York')
+      .one.wide.column
+
+block scripts
+  script(type='text/javascript').
+    $(document).ready(function() {
+      $('.ui.embed.tutoring.schedule').embed();
+    });

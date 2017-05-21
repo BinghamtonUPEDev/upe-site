@@ -1,0 +1,33 @@
+.ui.footer.segment
+  .ui.three.column.equal.width.divided.grid
+    .ui.row
+      .column
+        h3.ui.header
+          i.users.icon
+          .content
+            | E-Board Members
+            .sub.header The leadership of UPE
+        ul
+          each member in locals.eboard
+            li
+              strong #{member.position}:
+              | &nbsp;#{member.name}
+      .column
+        h3.ui.header
+          i.mail.icon
+          .content
+            | Contact Us
+            .sub.header Get in touch with us
+        .content
+          | Our office is located in EB-N1
+          br
+          strong Email:
+          | &nbsp;upeebd@binghamton.edu
+      .column
+        h3.ui.header
+          i.add.to.calendar.icon
+          .content
+            | Follow Us
+            .sub.header Stay updated via social media
+        a(href='https://www.facebook.com/Binghamton-University-UPE-489150227902031/timeline/', target='_blank')
+          i.huge.facebook.link.icon
