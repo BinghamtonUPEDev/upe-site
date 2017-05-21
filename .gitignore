@@ -63,3 +63,6 @@ semantic/
 # Ignore certain asset folders
 assets/pdf
 assets/img/photos
+
+# Ignore static site
+static

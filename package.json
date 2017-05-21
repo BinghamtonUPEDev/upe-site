@@ -6,6 +6,7 @@
   "dependencies": {
     "async": "^2.4.0",
     "express": "^4.14.0",
+    "fs-extra": "^3.0.1",
     "jquery": "^3.1.1",
     "moment": "^2.15.2",
     "pug": "^2.0.0-beta11",
@@ -18,7 +19,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app/app.js",
-    "dev": "./node_modules/.bin/nodemon app/app.js"
+    "dev": "./node_modules/.bin/nodemon app/app.js",
+    "generate": "COMPILE=true node app/app.js"
   },
   "repository": {
     "type": "git",
