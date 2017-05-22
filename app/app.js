@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 });
 
 // App locals
-app.locals.title = 'Upsilon Pi Epsilon';
+app.locals.title = 'UPE Iota Chapter';
 app.locals.moment = moment;
 app.locals.path = path;
 app.locals.properCase = (str) => str.charAt(0).toUpperCase() + str.substring(1);
