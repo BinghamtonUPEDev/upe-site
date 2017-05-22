@@ -171,7 +171,7 @@ if (process.env.COMPILE) {
     tasks.push(copy('public/', 'static/public'));
 
     tasks.push(getPhotos('spring17'));
-    tasks.push(getPhotos('fall16'));
+    tasks.push(getPhotos('spring16'));
     tasks.push(writeFile('views/photos.pug', 'static/photos.html'));
 
     tasks.push(writeFile('views/index.pug', 'static/index.html'));

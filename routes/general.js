@@ -39,14 +39,14 @@ module.exports = function(app) {
         };
 
         tasks.push(getPhotos('spring17'));
-        tasks.push(getPhotos('fall16'));
+        tasks.push(getPhotos('spring16'));
 
         async.parallel(tasks, function(err, results) {
             if (err) return res.render('error');
 
             return res.render('photos', {
                 spring17: results[0],
-                fall16: results[1]
+                spring16: results[1]
             });
         });
     });
