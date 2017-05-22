@@ -54,19 +54,25 @@ app.locals.navigation = [{
 // Define EBoard members
 app.locals.eboard = [{
     position: 'President',
-    name: 'Alexander Strong'
+    name: 'Aiden Cullo'
 }, {
      position: 'Vice President',
-     name: 'Casey Kane'
+     name: 'Zachary Halpern'
 }, {
      position: 'Secretary',
-     name: 'Yu Heng Chen'
+     name: 'Melanie Chen'
+}, {
+     position: 'Treasurer',
+     name: 'Julie Kunnumpurath'
 }, {
      position: 'Tutoring Coordinator',
-     name: 'Taylor Foxhall'
+     name: 'Johnathon Van Atta'
 }, {
      position: 'Webmaster',
-     name: 'Darrin Frodey'
+     name: 'Juliana Algava'
+}, {
+     position: 'Events Coordinator',
+     name: 'Josiah Bailey'
 }];
 
 // Routes
@@ -160,6 +166,9 @@ if (process.env.COMPILE) {
         'static/semantic/semantic.min.css'));
     tasks.push(copy('node_modules/semantic-ui-css/semantic.min.js',
         'static/semantic/semantic.min.js'));
+    tasks.push(copy('node_modules/semantic-ui-css/themes',
+        'static/semantic/themes'));
+    tasks.push(copy('public/', 'static/public'));
 
     tasks.push(getPhotos('spring17'));
     tasks.push(getPhotos('fall16'));
